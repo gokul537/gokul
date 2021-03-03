@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tourisam</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@607&display=swap" rel="stylesheet">
+
+  <style>
+    .b {
+      transition: 1ms;
+      border: 2px solid orange;
+      display: block;
+      outline: orange;
+      border-radius: 10px;
+    }
+
+    .b:hover {
+      transform: scale(1.05);
+      color: white;
+      background-color: orange;
+    }
+
+    .b1 {
+      display: inline-block;
+      background-color: orange;
+      transition: 3ms;
+      outline: orange;
+      border-radius: 8px;
+    }
+
+    .b1:hover {
+      transform: scale(1.05);
+      box-shadow: 5px white;
+    }
+
+    .container1 {
+      margin-top: 50px;
+      width: 100%;
+      height: 539px;
+      background-image: url('tour1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 2px solid black none;
+      position: relative;
+    }
+
+    .con {
+      width: 800px;
+      height: 230px;
+      margin: auto;
+      border: 2px solid black none;
+      padding-top: 250px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 500;
+      font-family: 'Oswald', sans-serif;
+      color: white;
+
+    }
+
+    .img-thumbnail {
+      background-color: burlywood;
+    }
+
+    .img-thumbnail:hover {
+      box-shadow: 2px 2px 9px 9px blue;
+    }
+
+    .img1 {
+      box-shadow: 2px 2px 20px 20px blue;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <H1 style="text-align: center;" id="name"></H1>
+      <script>
+        var i=0;
+        var text="GK TOURISM";
+        function name(){
+          document.getElementById("name").innerHTML += text.charAt(i); 
+          i++;
+          setTimeout (name,500);
+        }
+        name();
+      </script>
+      <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="" class="text-warning">
+              <h5>HOME</h5>
+            </a>
+          </li>
+          &nbsp; &nbsp; &nbsp; &nbsp; <li class="nav-item ">
+
+            <div class="dropdown">
+              <button class="btn text-warning dropdown dropright dropdown-toggle" type="button" data-toggle="dropdown">
+                <h5>TYPE OF TOURS</h5>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">mumbai</a></li>
+              </ul>
+            </div>
+          </li>
+          &nbsp; &nbsp; &nbsp; &nbsp; <li class="nav-item ">
+            <a href="" class="text-warning">
+              <h5>INSTRUCTORS</h5>
+            </a>
+          </li>
+          &nbsp; &nbsp; &nbsp; &nbsp; <li class="nav-item ">
+            <a href="" class="text-warning">
+              <h5>CONTACTS</h5>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <button style="float: right; width: 150px; height:50px; " class="b" id="btn"></button>
+      <script>
+        var j=0;
+        var txt="DISCOVER";
+        function btn(){
+          document.getElementById("btn").innerHTML += txt.charAt(j); 
+          j++;
+          setTimeout (btn,80);
+        }
+        btn();
+      </script>
+      <span></span>
+
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container1">
+      <div class="con">
+        <h1 id="k"> </h1>
+        <button style="width:200px; height: 70px;" class="b1">DISCOVER</button>
+      </div>
+      <script>
+        var l=0;
+        var tet="ALL TRAVEL FROM DIRECT <br>ORGANIZERS! +"<br>" WE INVITE YOU TO TRAVEL!";
+        function titlename(){
+          document.getElementById("k").innerHTML
+        }
+      </script>
+    </div>
+  </section>
+  <br><br><br>
+  <section>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1 class="text-center">OUTDOOR ACTIVITY</h1>
+          <img src="tour4.jpg" alt="Los Angeles">
+        </div>
+        <div class="carousel-item">
+          <h1 class="text-center">FAMILY TRIP</h1>
+          <img src="tour2.jpg" alt="Chicago">
+        </div>
+        <div class="carousel-item">
+          <h1></h1>
+          <img src="tour3.jpg" alt="New York">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+  </section>
+  <br><br><br>
+  <section>
+    <div class="container">
+      <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="col-sm-3">
+          <h2>TYPES OF <br> TOURISM</h2>
+        </div>
+
+        <div class="col-sm-4">
+          <img src="img1.png" class="img-thumbnail">
+          <h6 class="text-center">Hiking</h6>
+        </div>
+
+
+        <div class="col-sm-4 text-center">
+          <img src="img2.png" class="img-thumbnail">
+          &nbsp; &nbsp; &nbsp;<h6>Rafting</h6>
+        </div>
+
+
+      </div>
+      <div class="row">
+
+        <div class="col-sm-4">
+          <img src="img3.png" class="img-thumbnail">
+          <h6>Winter Hiking</h6>
+        </div>
+
+
+        <div class="col-sm-4">
+          <img src="img4.png" class="img-thumbnail">
+          <p>Ethnotours & Expeditions</p>
+        </div>
+
+
+        <div class="col-sm-4">
+          <img src="img5.png" class="img-thumbnail">
+          <h6>Other</h6>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section id="tabs1-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 align-center title__block">
+          <h3 class="text-center mbr-fonts-style display-10">WHAT SUITS YOU CHOOSE</h3>
+        </div>
+      </div>
+      <div class="media-container-row">
+        <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link mbr-fonts-style show  active" data-toggle="tab"
+                href="#tabs1-4_tab0">Hiking</a></li>
+            <li class="nav-item"><a class="nav-link mbr-fonts-style  " data-toggle="tab" href="#tabs1-4_tab1">
+                Rafting and Kayaking
+              </a></li>
+            <li class="nav-item"><a class="nav-link mbr-fonts-style  " data-toggle="tab" href="#tabs1-4_tab2">Winter
+                Hiking
+              </a></li>
+            <li class="nav-item"><a class="nav-link mbr-fonts-style " data-toggle="tab" href="#tabs1-4_tab3">Other</a>
+            </li>
+
+          </ul>
+          <div class="tab-content">
+            <div id="tabs1-4_tab0" class="tab-pane in active">
+              <div class="row">
+
+
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Climbing</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci
+                      reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Speleotourism</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum
+                      dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Walking without backpacks <br>(short distances)
+                    </h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi
+                      soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Hiking with backpacks <br>(with an overnight stay)
+                    </h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci,
+                      reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste
+                      nulla.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tabs1-4_tab1" class="tab-pane" role="tabpanel">
+              <div class="row">
+
+
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Kayaking</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci
+                      reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Fishing</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum
+                      dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Yachting</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi
+                      soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">On packrafts</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi
+                      soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tabs1-4_tab2" class="tab-pane" role="tabpanel">
+              <div class="row">
+
+
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Skiing</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci
+                      reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Alpine skiing / Snowboard</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum
+                      dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">On snowmobiles</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum
+                      dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tabs1-4_tab3" class="tab-pane" role="tabpanel">
+              <div class="row">
+
+
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Bike tour</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci
+                      reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Horse tour</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum
+                      dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Jeep tour</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi
+                      soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Sightseeing tour</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci,
+                      reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste
+                      nulla.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tabs1-4_tab4" class="tab-pane" role="tabpanel">
+              <div class="row">
+
+
+                <div class="col-lg-6 col-12 ">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Climate</h5>
+                    <p class="card__text mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci
+                      reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Public Transport</h5>
+                    <p class="card__text mbr-fonts-style display-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum
+                      dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Internet</h5>
+                    <p class="card__text mbr-fonts-style display-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi
+                      soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 card__wrap">
+
+                  <div class="card__content">
+                    <h5 class="card__title mbr-fonts-style display-7">Money</h5>
+                    <p class="card__text mbr-fonts-style display-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci,
+                      reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste
+                      nulla.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 ">
+          <div class="image-block">
+            <div class="image">
+              <img src="tour5.jpg" class="img1">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="image__block">
+                <div class="image">
+                  <img src="assets/images/tours8-1-1200x800.jpg" alt="" title="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12 offset-sm-2 content__wrap">
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-12 title__block align-center">
+
+                  <h3 class=" mbr-fonts-style display-15">THIS INFORMATION CAN BE USEFUL WHEN TRAVELING</h3>
+                  <p class="mbr-text  mbr-fonts-style display-18">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Quae, ea.</p>
+                  <p class="link mbr-fonts-style display-15"><a href="#" class="text-warning">Read Article<span
+                        class="fa-long-arrow-right fa mbr-iconfont"></span></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="col-sm-3 offset-8">
+        <h1>Our Instructors</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates deleniti earum eos laboriosam quae
+          eligendi molestiae, voluptatem fugiat!</p>
+      </div>
+    </div>
+    <div class="col-sm-6 offset-1">
+
+      <div class="row" onmouseout="changeImage">
+
+
+        <div class="col-3">
+          <div class="images" >
+            <img src="guid.jpg" name="slide">
+          </div>
+        </div>
+        <div class="col-3 row_image">
+          <div class="images" id="img2">
+            <img src="guid1.jpg" name="slide1">
+          </div>
+        </div>
+        <div class="col-3 row_image">
+          <div class="images">
+            <img src="guid3.jpg">
+          </div>
+        </div>
+        <div class="col-3 row_image" style="margin-bottom: 20px;">
+          <div class="images">
+            <img src="guid5.jpg">
+          </div>
+        </div>
+        <div class="col-3 row_image">
+          <div class="images">
+            <img src="guid6.jpg">
+          </div>
+        </div>
+        <div class="col-3 row_image">
+          <div class="images">
+            <img src="guid7.jpg">
+          </div>
+        </div>
+        <div class="col-3 row_image">
+          <div class="images">
+            <img src="guid8.jpg">
+          </div>
+        </div>
+        <div class="col-3 row_image">
+          <div class="images">
+            <img src="guid9.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var k=0;
+      var img=[];
+      var time=1000;
+      img[0]='guid.jpg';
+      img[1]='guid1.jpg';
+      function imgname(){
+        document.slide.src = img[k];
+        if(k<1){
+          k++;
+
+        }else{
+          k=0;
+        }
+        setTimeout('imgname()',time);
+      }
+      window.onload=imgname;
+    </script>
+    <script>
+      var a=0;
+      var img=[];
+      var time=1000;
+      img[0]='guid1.jpg';
+      img[1]='guid.jpg';
+      
+      function imgname1(){
+        document.slide1.src = img[a];
+        if(a<1){
+          a++;
+        }else{
+          a=0;
+        }
+        setTimeout('imgname1()',time);
+      }
+      window.onload=imgname1;
+    </script>
+    <!-- <script>
+      function changeImage() {
+        var img = document.getElementById("img1");
+        img.src = images[x];
+        x++;
+        if (x >= images.length) {
+          x = 0;
+        }
+        fadeImg(img, 80, true);
+        setTimeout("changeImage()", 2000);
+      }
+
+
+      function fadeImg(el, val, fade) {
+        if (fade === true) {
+          val--;
+        } else {
+          val++;
+        }
+        if (val > 0 && val < 100) {
+          el.style.opacity = val / 50;
+          setTimeout(function () { fadeImg(el, val, fade); }, 10);
+        }
+      }
+
+      var images = [], x = 0;
+      images[0] = 'tourisam/guid.jpg';
+      images[1] = 'touri';
+      images[2] = "guid3";
+      setTimeout("changeImage()", 1000);
+    </script> -->
+
+    <!-- <script>
+  var imgArray = new Array();
+
+imgArray[0] = new Image();
+imgArray[0].src = 'toursium/guid.jpg';
+
+imgArray[1] = new Image();
+imgArray[1].src = 'guid1.jpg';
+
+/* ... more images ... */
+
+imgArray[5] = new Image();
+imgArray[5].src = 'images/img/Splash_image6.jpg';
+
+/*------------------------------------*/
+
+function nextImage(element)
+{
+    var img = document.getElementById(img);
+
+    for(var i = 0; i < imgArray.length;i++)
+    {
+        if(imgArray[i].src == img.src) // << check this
+        {
+            if(i === imgArray.length){
+                document.getElementById(img).src = imgArray[0].src;
+                break;
+            }
+            document.getElementById(img).src = imgArray[i+1].src;
+            break;
+        }
+    }
+}
+</script> -->
+    </div>
+  </section>
+  <br><br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 class="text-primary">SHARING <br>THE BEST</h1>
+        </div>
+        <div class="col-sm-3">
+          <h5>Top 5 Travels once a month in your inbox</h5>
+        </div>
+        <div class="col-sm-6">
+
+          <!---Formbuilder Form--->
+          <div class="dragArea row offset-7">
+
+            <div class="form-group col-md-15 col-lg-10 col-8 " data-for="email">
+              <form action="">
+                <input type="email" name="email" placeholder="Your Email" data-form-field="Email" required="required"
+                  class="form-control display-4" id="email-form1-a" style="width: 150px;">
+            </div>
+            <div class="col-md-3 col-lg-5 col-4 input-group-btn"><button type="submit"
+                class="btn btn-lg btn-warning display-4">Send</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
